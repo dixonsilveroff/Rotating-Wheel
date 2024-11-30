@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.wheel-container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin-inline: auto;
+}
+
+.wheel {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  border: 60px solid;
+  border-color: red green yellow blue;
+  transition: transform 1.5s linear;
+  transform: rotate(0deg);
+}
+
+.wheel-container:hover .wheel {
+  transform: rotate(990deg);
+}
